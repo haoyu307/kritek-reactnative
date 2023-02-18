@@ -13,9 +13,11 @@ const Route = () => {
     <NavigationContainer>
       <StatusBar backgroundColor={'#000'} barStyle="dark-content" />
       <AppStack.Navigator
-        screenOptions={{
-          headerShown: false,
-        }}>
+        screenOptions={
+          {
+            // headerShown: false,
+          }
+        }>
         <AppStack.Screen name="List" component={List} />
         <AppStack.Screen name="Detail" component={Detail} />
       </AppStack.Navigator>
